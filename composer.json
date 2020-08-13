@@ -1,0 +1,16 @@
+{
+    "name": "vendor/hans",
+    "description": "this is a swoole server project",
+    "type": "project",
+    "license": "acbdAhjun12344",
+    "authors": [
+        {
+            "name": "huzonghua Hans",
+            "email": "123@qq.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "swoole/ide-helper": "@dev"
+    }
+}
