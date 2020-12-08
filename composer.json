@@ -11,6 +11,7 @@
     ],
     "minimum-stability": "dev",
     "require": {
-        "swoole/ide-helper": "@dev"
+        "swoole/ide-helper": "@dev",
+        "ext-json": "*"
     }
 }

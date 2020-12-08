@@ -233,6 +233,7 @@ class SwooleTcp
     public function onConnect($server, $fd)
     {
         $client = $server->getClientInfo($fd);
+        $server->task(2222, -1);
 
         echo "from ".$client['remote_ip']." Client: Connect succeed.\n";
     }

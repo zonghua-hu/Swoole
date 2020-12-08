@@ -7,6 +7,8 @@ date_default_timezone_set('Asia/Shanghai');
 require_once 'server/SwooleTcp.php';
 require_once 'server/SwooleHttp.php';
 
+require_once 'ServerAsynchronous/ServerTcpAsy.php';
+
 $options = getopt('t:');
 $version = 1.0;
 $serverType = $options['t'];
@@ -17,6 +19,9 @@ $arguments['config'] = ['worker_num' => 1, 'task_worker_num' => 1];
 switch ($serverType) {
     case 'tcp':
         \server\SwooleTcp::run($arguments);
+        break;
+    case 'tcpAsy':
+        \ServerTcpAsy::run($arguments);
         break;
     case 'http':
         \server\SwooleHttp::run($arguments);
